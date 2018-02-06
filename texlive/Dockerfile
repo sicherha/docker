@@ -1,6 +1,6 @@
 FROM debian:stable
 
-RUN apt update \
-	&& apt install -y git inkscape make texlive-full \
-	&& apt purge -y '.*-doc$' \
-	&& apt clean -y
+RUN apt-get update \
+	&& apt-get install -y git inkscape make texlive-full \
+	&& apt-get purge -y '.*-doc$' \
+	&& apt-get clean -y
