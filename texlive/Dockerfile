@@ -1,4 +1,4 @@
-FROM debian:stable
+FROM ubuntu:18.04
 
 RUN apt-get update \
 	&& apt-get install -y dia git inkscape libreoffice make python-pygments texlive-full \
